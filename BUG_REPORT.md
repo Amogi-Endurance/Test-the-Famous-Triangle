@@ -44,7 +44,7 @@
 - **Severity:** 🟢 Low
 
 ------------------------------
-## Bug #6: Large Numerical Overflow
+**## Bug #6: Large Numerical Overflow
 Summary: The application fails to scale the graphical canvas when extremely large values are entered, causing the triangle to render off-screen or the UI to freeze.
 Steps: Input (999999999, 999999999, 999999999).
 Expected: The UI should scale the rendering to fit the visible canvas area.
@@ -77,7 +77,7 @@ Summary: Submitting the form with one or more empty fields causes an unhandled "
 Steps: Leave one side length blank and click "Submit".
 Expected: A validation message: "All fields are required."
 Actual: The system displays "NaN" or a broken visual state.
-Severity: 🔴 High
-------------------------------
+Severity: 🔴 High**
+-------
 
 
