@@ -1,2 +1,2 @@
 # Test-the-Famous-Triangle
-A specialized geometry tool designed to classify triangles and visualize their shapes. This project focuses on rigorous edge-case testing, including the Triangle Inequality Theorem, floating-point precision, and strict input validation to ensure mathematical accuracy in software rendering
+An exploratory testing project centered on a Triangle Testing Application. This repository documents the identification and reporting of critical logic and rendering bugs (v1.3.1), demonstrating a deep dive into boundary value analysis and robust error handling
