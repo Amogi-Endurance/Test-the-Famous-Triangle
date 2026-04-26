@@ -48,37 +48,37 @@ Bug #6: Large Numerical Overflow
 - **Summary:** The application fails to scale the graphical canvas when extremely large values are entered, causing the   triangle to render off-screen or the UI to freeze.
 - **Steps:** Input (999999999, 999999999, 999999999).
 - **Expected:** The UI should scale the rendering to fit the visible canvas area.
-**Actual:** The triangle renders off-canvas or the browser becomes unresponsive.
+-**Actual:** The triangle renders off-canvas or the browser becomes unresponsive.
 - **Severity:** 🟡 Medium
 ---
 
 Bug #7: Leading/Trailing Whitespace Acceptance
- **Summary:** The input fields do not "trim" whitespace. Entering a space before or after a number causes a validation error.
+-**Summary:** The input fields do not "trim" whitespace. Entering a space before or after a number causes a validation error.
 - **Steps:** Input " 5" (with a leading space) in any field.
-**Expected:** The system should sanitize the input and treat " 5" as "5".
-**Actual:** System rejects the input as a malformed string.
-**Severity:** 🟢 Low
+-**Expected:** The system should sanitize the input and treat " 5" as "5".
+-**Actual:** System rejects the input as a malformed string.
+-**Severity:** 🟢 Low
 ---
 Bug #8: Scientific Notation Rejection
 - **Summary:** Standard mathematical notation (e.g., 1e3 for 1000) is rejected as alphanumeric by the validation logic.
-**Steps:** Input (1e2, 1e2, 1e2).
-**Expected:** The system should parse scientific notation as a valid number.
-**Actual:** Input is rejected as invalid.
-**Severity:** 🟢 Low
+- **Steps:** Input (1e2, 1e2, 1e2).
+- **Expected:** The system should parse scientific notation as a valid number.
+- **Actual:** Input is rejected as invalid.
+- **Severity:** 🟢 Low
 ---
 Bug #9: Lack of "Clear" or "Reset" Functionality
 - **Summary:** There is no way to reset the application state. Previous results and shapes persist during new inputs.
-**Steps:** Run a test for (5, 5, 5), then run a test for (10, 10, 10).
-**Expected:** The canvas should clear before the new triangle is drawn.
-**Actual:** Visual artifacts from previous tests sometimes remain visible.
-**Severity:** 🟡 Medium
+- **Steps:** Run a test for (5, 5, 5), then run a test for (10, 10, 10).
+- **Expected:** The canvas should clear before the new triangle is drawn.
+- **Actual:** Visual artifacts from previous tests sometimes remain visible.
+- **Severity:** 🟡 Medium
 ---
 Bug #10: Empty Field Submission (System Stability)
 - **Summary:** Submitting the form with one or more empty fields causes an unhandled "NaN" error.
-**Steps:** Leave one side length blank and click "Submit".
-**Expected:** A validation message: "All fields are required."
-**Actual:** The system displays "NaN" or a broken visual state.
-**Severity:** 🔴 High
+- **Steps:** Leave one side length blank and click "Submit".
+- **Expected:** A validation message: "All fields are required."
+- **Actual:** The system displays "NaN" or a broken visual state.
+- **Severity:** 🔴 High
 ---
 
 
