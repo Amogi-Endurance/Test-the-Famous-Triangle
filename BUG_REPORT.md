@@ -53,12 +53,13 @@ Bug #6: Large Numerical Overflow
 ---
 
 Bug #7: Leading/Trailing Whitespace Acceptance
--**Summary:** The input fields do not "trim" whitespace. Entering a space before or after a number causes a validation error.
+- **Summary:** The input fields do not "trim" whitespace. Entering a space before or after a number causes a validation error.
 - **Steps:** Input " 5" (with a leading space) in any field.
 -**Expected:** The system should sanitize the input and treat " 5" as "5".
 -**Actual:** System rejects the input as a malformed string.
 -**Severity:** 🟢 Low
 ---
+
 Bug #8: Scientific Notation Rejection
 - **Summary:** Standard mathematical notation (e.g., 1e3 for 1000) is rejected as alphanumeric by the validation logic.
 - **Steps:** Input (1e2, 1e2, 1e2).
